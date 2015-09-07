@@ -2,18 +2,4 @@
 
 <h2>Add a product</h2>
 
-<%= form_for @product do |f| %>
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
-  <p>
-  	<%= f.label :description %><br>
-  	<%= f.text_field :description %>
-  </p>
-  <p>
-  	<%= f.label :price_in_cents %><br>
-  	<%= f.text_field :price_in_cents %>
-  </p>
-    <%= f.submit "Save" %>
-<% end %>
+<%= render 'form' %>
