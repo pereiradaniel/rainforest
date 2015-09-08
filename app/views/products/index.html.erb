@@ -2,6 +2,9 @@
 
 <% @products.each do |product| %>
   <p>Product name: <%= product.name %></p>
-  <p>Description: <%= product.description %></p>
-  <p>Price in cents: <%= product.formatted_price %>
+  <ul>
+    <li>Description: <%= product.description %></li>
+    <li>Price in cents: <%= product.formatted_price %></li>
+  <p><%= link_to "View", "/products/#{product.id}" %></p>
+  </ul>
 <% end %>
