@@ -9,4 +9,16 @@ class Product < ActiveRecord::Base
   	price_in_dollars = price_in_cents.to_f / 100
   	sprintf("%.2f", price_in_dollars)
   end
+
+  def list_users_review
+    output = []
+    self.users.each do |user|
+      if output.include?(user) != true
+      	output << user
+      elsif output.include?(user) == true
+      end
+    end
+    return output
+  end
+
 end
