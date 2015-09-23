@@ -1,0 +1,10 @@
+<div class="grid cf">
+	<div class="product_box col-2-3">
+	  <p>Product name: <%= product.name %></p>
+	  <ul>
+	    <li>Description: <%= product.description %></li>
+	    <li>Price in cents: <%= product.formatted_price %></li>
+	  <p class="view_link"><%= link_to "View", "/products/#{product.id}" %> | <%= link_to "Edit", "/products/#{product.id}/edit" %></p>
+	  </ul>
+	</div>
+</div>

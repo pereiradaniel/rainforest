@@ -1,3 +1,26 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*
+=======================
+Boxes and windows
+=======================
+*/
+
+.product_box {
+	max-width: 10em;
+	text-align: left;
+	border-style: solid;
+	border-width: 1px;
+	padding: 1em;
+	box-shadow: 6px 6px 4px #ECECEC;
+	border-radius: 0px 0px 7px 7px;
+	margin: 2em;
+	float: left;
+}
+
+.view_link {
+	background-color: #ECECEC;	
+}
